@@ -1,0 +1,3 @@
+sudo apt install chkrootkit
+find /lib* -type f -name libns2.so
+netstat -nap | grep "@/proc/udevd"

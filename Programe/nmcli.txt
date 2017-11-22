@@ -1,0 +1,17 @@
+List of saved connections
+nmcli c
+
+List of available wifi hotspots
+nmcli d wifi list
+sudo iwlist wlan0 scanning
+(a doua versiune e mult mai detaliata)
+
+Lista interfetelor
+ifconfig -a
+wlx502b73e41a49 - interfata mea
+
+nmcli d disconnect wlx502b73e41a49
+nmcli d connect wlx502b73e41a49
+
+nmcli c down <hotspot connection>
+nmcli c up <hotspot connection>

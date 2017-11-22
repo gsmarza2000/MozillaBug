@@ -1,0 +1,179 @@
+about:config
+
+Set these to false:
+#security.ssl3.ecdh_ecdsa_rc4_128_sha
+#security.ssl3.ecdh_rsa_rc4_128_sha
+security.ssl3.ecdhe_ecdsa_rc4_128_sha
+security.ssl3.ecdhe_rsa_rc4_128_sha
+security.ssl3.rsa_rc4_128_md5
+security.ssl3.rsa_rc4_128_sha
+
+#security.tls.version.max
+#Replace with number 3 to enable TLS 1.2.
+security.ssl3.dhe_rsa_aes_ => false
+Both of them for security issue LogJam
+
+#security.tls.version.min
+#Replace 0 with 1 to switch from SSL 3.0 to TLS 1.0.
+
+popup
+dom.popup_allowed_events
+Default is: change click dblclick mouseup reset submit touchend
+Modify to: change reset submit touchend
+
+New-> Boolean: plugin.expose_full_path
+Set “true”
+
+New -> Boolean: config.trim_on_minimize
+Set "true"
+
+backspace
+Set to 0
+
+browser.sessionhistory.max_total_viewer
+Set to 0
+
+Turn off the new tab page, and makes it about:blank:
+browser.newtab.url => https://ixquick.com/do/mypage.pl?prf=0834f4928673f1e25faa76d4a1d58c9f
+
+https://duckduckgo.com/?kae=d&kp=-1&k1=-1&kaj=m&kf=fw
+
+about:newtab
+
+Turn off Geolocation:
+geo.enabled => false
+
+Turn off file virus-scan after download:
+browser.download.manager.scanWhenDone => false
+
+#Override the useragent to most common useragent (not needed with Blender/UA Switcher):
+#New > string: general.useragent.override =>
+Mozilla/5.0 (Windows 8.1; WOW64; rv:1.3) Gecko/20140101 Firefox/35.0
+
+Force installation of non-updated add-ons:
+New > boolean: extensions.checkCompatibility.[version #] => false
+
+Disable prefetching (preloading of pages), which lowers RAM usage:
+network.prefetch-next => false
+
+Override location bar search (pick only one):
+keyword.url => "https://duckduckgo.com/html/?q="
+keyword.url => "https://startpage.com/do/search?q="
+
+browser.cache.use_new_backend => 1
+
+Enable HTTP pipelineing regularly, on SSL pages, and on proxies, respectively:
+#network.http.pipelining => false
+network.http.pipelining.ssl => true
+network.http.proxy.pipelining => true
+
+Increase the amount of connections/requests Firefox will make:
+network.http.pipelining.maxrequests => 64
+network.http.max-connections => 512
+network.http.max-persistent-connections-per-server => 32
+network.http.pipelining.max-optimistic-requests => 20
+
+Speed up the security delay when installing add-ons:
+security.dialog_enable_delay => 400
+
+Disable tab animations:
+browser.tabs.animate => false
+
+Put cache on RAM:
+#browser.cache.memory.enable => true
+browser.cache.memory.max_entry_size => -1
+browser.cache.disk.enable => false
+browser.cache.disk.parent_directory => /tmp/firefox
+
+Reduce page loading delay:
+New > integer: nglayout.initialpaint.delay => 0
+New > boolean: content.interrupt.parsing => true
+New > boolean: content.notify.ontimer => true
+New > integer: content.max.tokenizing.time => 100000
+New > integer: content.notify.backoffcount => -1
+New > integer: content.notify.interval => 100000
+New > integer: content.switch.threshold => 2000000
+
+Remove submenu slide delay:
+New > integer: ui.submenuDelay => 0
+
+Set a "do-not-track" header to tell sites not to track browsing habits:
+privacy.donottrackheader.enabled => true
+
+Disable Google Blacklists:
+browser.safebrowsing.enabled => false
+browser.safebrowsing.maleware.enabled => false
+
+Disable pings:
+browser.send_pings => false
+browser.send_pings.require_same_host => true
+
+Disable suggestions on searchbar:
+browser.search.suggest.enabled => false
+
+Disable keywords:
+keyword.enabled => false
+
+Disable certificates:
+browser.ssl_override_behavior => 2
+
+Disable DNS proxy bypass:
+network.proxy.socks_remote_dns => true
+
+Disable crash reporting:
+In application.ini in the Firefox folder,
+[Crash Reporter]Enabled=1 => [Crash Reporter]Enabled=0
+
+browser.tabs.CloseWindowWithLastTab => false
+trimURL => false
+ctrlTab.previews => true
+showQuitwarning => true
+plugins.click_to_play => false
+
+Add-ons Manager
+about:addons
+Clear Console
+Download YouTube Videos as MP4
+FireSSH
+Flagfox
+HTTPS-Everywhere
+NoScript
+Privacy Settings
+S3.Google Translator
+Self-Destructing Cookies
+SPDY indicator
+StumbleUpon
+Stylish
+    AMO - Dark Theme
+    Colorize Firefox Buttons
+    Dark Gmailmod by Karsonito
+    Darker askubuntu.com
+    Darker ubuntu.com
+    Duolingo Dark 2
+    flat dark gray Facebook
+    Flat Firefox
+    GlassFox - choose your personal NewTab
+    GlowLinks
+    gmail Terminal (*all* black background)
+    Google NightBlue 2K15 by a3cAnton
+    Google Weed (Cannabis) Theme 2
+    kernel.org - dark
+    Midnight Surfing - Global Dark Style
+    Night Diamond Cursor Set
+    Sleeping Dragons Cursor Set (-CyberationMicro-)
+    SoundCloud Dusk
+    Toolbox hider for Firefox
+    Ubuntu Forums KISS
+    Ubuntu Wiki Dark (tjW)
+    Userstyles Dark | aperopia
+    Wikipedia.org dark + transparent
+    Youtube - Lights Out - A Dark Youtube Theme
+WOT
+
+Appearance
+FT DeepDark
+
+Plugins
+Google Talk Plugin
+Google Talk Plugin Video Renderer
+Shockwave Flash

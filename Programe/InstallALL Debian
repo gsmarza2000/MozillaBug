@@ -1,0 +1,101 @@
+SAFE TO USE
+sudo add-apt-repository ppa:teejee2008/ppa
+sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+sudo add-apt-repository ppa:alex-wv/pulseaudio-equalizer-ppa
+sudo add-apt-repository ppa:ubuntu-mate-dev/ppa
+sudo apt-get update
+sudo apt-get install y-ppa-manager
+sudo add-apt-repository ppa:numix/ppa
+sudo apt-get install numix-icon-theme numix-icon-theme-circle
+sudo add-apt-repository ppa:satyajit-happy/themes
+sudo add-apt-repository ppa:yunnxx/elementary
+sudo apt-get install elementary-dark-theme
+elementary-dark-theme elementary-plastico-theme elementary-whit-e-theme elementary-harvey-theme elementary-blue-theme elementary-colors-theme elementary-lion-theme elementary-champagne-theme elementary-milk-theme elementary-emod-icons elementary-elfaenza-icons elementary-nitrux-icons elementary-enumix-utouch-icons elementary-plank-themes
+sudo add-apt-repository ppa:yunnxx/elementary
+sudo apt-get install elementary-transparent-theme
+sudo apt-get install super-wingpanel
+
+sudo add-apt-repository ppa:micahflee/ppa
+sudo apt-get update
+sudo apt-get install torbrowser-launcher
+
+SAFE TO USE
+alacarte apt-xapian-index audience baobab bleachbit chkrootkit clementine conky conky-manager dconf-tools fonts-cantarell fail2ban firestarter glxinfo glxgears gnupg gparted hddtemp hexchat keepassx libgnutls26 libkeybinder lm-sensors mate-tweak nmap noise openssh-server openvpn playonlinux preload pulseaudio-equalizer redshift rkhunter slurm spamassassin tinyca vlc
+
+sudo add-apt-repository ppa:atareao/telegram
+
+TERMINAL
+aptitude atop byobu calcurse cowsay curl dstat duplicity emacs glances htop iftop iptraf mc mp3blaster mpv mtr nethack nethogs powertop
+qalc ranger remind rsync rsyncrypto sar siege sl slurm taskwarrior telegram tsung vifm vim wyrd
+
+FIX CHROMIUM
+sudo apt-get install pepperflashplugin-nonfree
+sudo update-pepperflashplugin-nonfree --install
+
+numix-frost-themes grub-customizer conky-manager openjdk tor torsocks vidalia virtualbox-host-modules
+sudo modprobe vboxdrv
+
+INSTALL MEGASYNC NEW ICONS
+git clone https://github.com/cybre/megasync-elementary.git
+cd megasync-elementary
+sudo ./install.sh
+
+STARTUP COMMANDS
+bash -c "sleep 10 && firefox"
+sleep 10 && firefox
+xterm -e 'sleep 10 && firefox'
+sh -c "sleep 10 && skype &"
+/usr/bin/onboard
+/home/george/Copy/myscripts/AutomaticDisplay
+cd /home/george/Copy/myscripts
+chmod +x AutomaticDisplay
+sudo chown -hR george /usr/local/src
+/usr/share/icons pixmaps
+/home/george/.config/autostart
+
+GAMES
+sudo apt-get install aisleriot blobwars bomberclone gnome-hearts gnubg hedgewars kobodeluxe mari0 neverball pingus playonlinux gnome-chess steam supertux supertuxkart teeworlds warzone2100 wine ace-of-penguins assaultcube mokomaze nexuiz openbve pipewalker redeclipse warmux
+
+THEMES AND ICONS I USE
+sudo apt-get install ambiance-dark darkenza elementary-blue-theme elementary-champagne-theme elementary-colors-theme elementary-dark-theme elementary-elfaenza-icons elementary-emod-icons elementary-enumix-utouch-icons elementary-harvey-theme elementary-icon-theme elementary-lion-theme elementary-milk-theme elementary-nitrux-icons elementary-plank-themes elementary-plastico-theme elementary-transparent-theme elementary-whit-e-theme evolve-gtk-theme faenza-icon-theme faience-icon-theme flatwoken-icons glass-icons lmint-icons malys-ex mint-x-icons moka-icon-theme-dark myelementary nitrux-icons potenza square-beam-icons square-icons mac-os-lion-icons-v2 mac-os-lion-theme-v2 mac-x-lion-reloaded
+
+UNINSTALLING AND CLEANING COMMANDS
+sudo apt-get check
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get clean
+sudo apt-get autoclean
+sudo apt-get autoremove
+sudo apt-get remove --purge ssh
+sudo apt-get --purge remove ssh
+sudo apt-get -f install
+sudo apt-get dist-upgrade
+
+THEMES AND ICONS
+sudo apt-get install aery-icons artnet-icons azenis-green-icons colored-plastic-icons compass-icons dkgreen faience-theme fs-icons g-xiria gnomishdark ieos7-icons ilinux-icons inx-icons lubuntubox malys-inversio malys-revolt malys-revolt-0.1 malys-revolt-0.5 malys-rought malys-uniblack malys-uniblue malys-uniwhite matrilineare mint-x-icons moka-icon-theme moka-icon-theme-blue moka-icon-theme-dark nitrux-icons nouvegnome-color nouvegnome-gray numix-icon-theme-circle osx-nostalgie potenza potenza-orange royal-linux-icons royal-linux-themes snow-sabre-icons trevilla-icons ubudao-style win-icons win-themes wine-blue-remix zoncolor-icons zoncolor-themes zorinos-icons zorinos-themes
+
+TESTING
+sudo apt-get install apparmor-docs apparmor-notify apparmor-profiles apparmor-utils dh-apparmor libapache2-mod-apparmor libapparmor-dev libapparmor-perl libapparmor1 libpam-apparmor python-libapparmor
+apt-file apt-show-versions auditd davfs2
+checkinstall git-core iptables-persistent logwatch mercurial miro network-manager-openvpn-gnome smuxi subversion wallch
+
+FOR DEVELOPERS
+sudo apt-get install anjuta geany retext
+quickly ubuntu-sdk (if you really use them)
+
+CONKY
+cd && wget -O .start-conky http://drive.noobslab.com/data/conky/start-conky
+chmod +x .start-conky
+BLACK
+cd && wget -O 123-noobslab-ethb.zip http://drive.noobslab.com/data/conky/123-conky/123conky-black-eth.zip
+unzip 123-noobslab-ethb.zip && rm 123-noobslab-ethb.zip
+WHITE
+cd && wget -O 123w-noobslab-eth.zip http://drive.noobslab.com/data/conky/123-conky/123conky-white-eth.zip
+unzip 123w-noobslab-eth.zip && rm 123w-noobslab-eth.zip
+ORANGE
+cd && wget -O 123o-noobslab-eth.zip http://drive.noobslab.com/data/conky/123-conky/123conky-orange-eth.zip
+unzip 123o-noobslab-eth.zip && rm 123o-noobslab-eth.zip
+FINISH CONKY INSTALL
+nano ~/.conkyrc
+LROP => LRCL - weather code for CJ
+
+dpkg-reconfigure hddtemp

@@ -1,0 +1,13 @@
+TURN ENCRYPTION ON
+sudo ecryptfs-setup-swap
+
+TURN IT OFF
+fdisk -l #find which partition are you using for swap
+sudo swapoff -a
+sudo cryptsetup remove /dev/mapper/cryptswap1
+sudo vim /etc/crypttab
+#remove the /dev/sda5 line
+sudo /sbin/mkswap /dev/sda5
+sudo swapon /dev/sda5
+sudo vim /etc/fstab
+#replace /dev/mapper/cryptswap1 with /dev/sda5

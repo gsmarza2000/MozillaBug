@@ -1,0 +1,36 @@
+Basic Netdata
+curl -Ss 'https://raw.githubusercontent.com/firehol/netdata-demo-site/master/install-required-packages.sh' >/tmp/kickstart.sh && bash /tmp/kickstart.sh netdata
+
+Advanced Netdata
+curl -Ss 'https://raw.githubusercontent.com/firehol/netdata-demo-site/master/install-required-packages.sh' >/tmp/kickstart.sh && bash /tmp/kickstart.sh netdata-all
+
+git clone https://github.com/firehol/netdata.git --depth=1
+
+cd netdata
+sudo ./netdata-installer.sh
+
+Start Netdata
+sudo /usr/sbin/netdata
+systemctl start netdata
+
+Stop Netdata
+sudo killall netdata
+systemctl stop netdata
+
+Start Netdata by default at system startup
+sudo cp /usr/sbin/netdata /etc/init.d/netdata
+sudo update-rc.d netdata defaults
+
+Update Netdata
+cd netdata
+git pull
+sudo ./netdata-installer.sh
+./netdata-updater.sh
+
+To run and update Netdata automatically
+sudo ln -s /home/george/netdata/netdata-updater.sh /etc/cron.daily/netdata-updater
+
+Uninstall Netdata
+cd netdata
+./netdata-uninstaller.sh --force
+./netdata-uninstaller.sh

@@ -1,0 +1,10 @@
+git clone LINK
+git status
+git add FILENAME - add file to the project in the computer.
+git add .
+git add -A
+git commit -m "message"
+git push - upload
+git pull - download
+git - for showing a list of commands
+esc :wq - for exiting from a message from git
